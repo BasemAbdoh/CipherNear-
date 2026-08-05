@@ -37,13 +37,23 @@ dependencies:
   flutter_p2p_connection: ^3.0.3  # للاتصال المباشر
   sqflite: ^2.4.1
   path_provider: ^2.1.5 # للوصول لمسارات الملفات
+  path: ^1.9.0           # لعمليات مسارات الملفات
   intl: ^0.20.2        # لتنسيق الوقت
   permission_handler: ^11.4.0  # لطلب الأذونات
+  url_launcher: ^6.3.0  # لفتح إعدادات النظام
+  shared_preferences: ^2.3.2  # لحفظ بيانات البروفايل
   image_picker: ^1.0.7  # لاختيار الصور والفيديو
   file_picker: ^8.0.0+1  # لاختيار الملفات
   audioplayers: ^6.0.0  # لتشغيل الصوت
   video_player: ^2.8.0  # لتشغيل الفيديو
   flutter_markdown: ^0.7.0  # لعرض النصوص المنسقة
+  flutter_launcher_icons: ^0.14.4
+  qr_flutter: ^4.1.0       # لتوليد QR Code
+  qr_code_scanner: ^1.0.1  # لمسح QR Code مباشر من الكاميرا
+  flutter_local_notifications: ^17.2.1  # للإشعارات المحلية للرسائل
+  flutter_native_splash: ^2.4.4
+  cryptography: ^2.7.0  # للتشفير الكامل (ECDH + AES-256-GCM)
+
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +79,10 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   # assets:
+  assets:
+    - lib/images/
+    - assets/sounds/
+  #  - lib/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
@@ -97,3 +111,20 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "lib/images/فرفش معي2.png"
+
+flutter_native_splash:
+  color: "#1a1a2e"
+  color_dark: "#1a1a2e"
+  image: lib/images/ايقونة ترحيبية.png
+  image_dark: lib/images/ايقونة ترحيبية.png
+  android_12:
+    color: "#1a1a2e"
+    icon_background_color: "#1a1a2e"
+    image: lib/images/ايقونة ترحيبية.png
+  fullscreen: true
+  web: false
